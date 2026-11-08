@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "realtimehfo"
+version = "0.1.0"
+description = "Research ripple-candidate detector for growing BESA ECoG recordings"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.0,<2.6", "scipy>=1.13,<2"]
+license = {text = "MIT"}
+
+[project.scripts]
+realtimehfo = "realtimehfo.__main__:main"
+
+[tool.setuptools]
+packages = ["realtimehfo"]
